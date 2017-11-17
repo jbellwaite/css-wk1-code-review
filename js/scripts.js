@@ -5,11 +5,15 @@ export class Age {
   }
   ageCalculator() {
     let ageinSeconds = this.age*365*86400;
-    console.log(ageinSeconds);
     return ageinSeconds;
-
-    
   }
+
+  mercuryCalculator(){
+    let mercuryAge =(this.age/ 0.24);
+    console.log(mercuryAge);
+    return mercuryAge;
+  }
+
 }
 
 export class AgeSeconds {

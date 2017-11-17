@@ -13,5 +13,10 @@ describe('Age', function() {
     expect(age.currentAgeCalculator()).toEqual(938217600);
   });
 
+  it ('should convert a persons Earth age to their Mars Age', function() {
+    let age = new Age (29);
+    expect(age.mercuryCalculator()).toEqual(6.96);
+  })
+
 
 });
