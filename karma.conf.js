@@ -1,5 +1,5 @@
 // Karma configuration
-// Generated on Thu Nov 16 2017 22:33:31 GMT-0800 (PST)
+// Generated on Fri Nov 17 2017 09:44:29 GMT-0800 (PST)
 
 module.exports = function(config) {
   config.set({
@@ -10,12 +10,11 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['jquery-3.2.1', 'jasmine', 'browserify'],
 
 
     // list of files / patterns to load in the browser
-    files: [
-      'js/*.js',
+    files: ['js/*.js',
       'spec/*-spec.js',
     ],
 
@@ -28,21 +27,20 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-        'js/*.js': [ 'browserify'],
-        'spec/*.js': ['browserify'],
-      },
-      plugins: [
-        'karma-jquery',
-        'karma-browserify',
-        'karma-jasmine',
-        'karma-chrome-launcher',
-        'karma-jasmine-html-reporter'
-      ],
-      browserify: {
-      debug: true,
-      transform: [ [ 'babelify', {presets: ["es2015"]} ] ]
+      'js/*.js': [ 'browserify'],
+      'spec/*.js': ['browserify'],
     },
-
+    plugins: [
+      'karma-jquery',
+      'karma-browserify',
+      'karma-jasmine',
+      'karma-chrome-launcher',
+      'karma-jasmine-html-reporter'
+    ],
+    browserify: {
+          debug: true,
+          transform: [ [ 'babelify', {presets: ["es2015"]} ] ]
+        },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
