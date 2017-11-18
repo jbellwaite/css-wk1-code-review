@@ -42,26 +42,29 @@ export class Age {
     let monthSeconds =(month*31*86400);
     let daySeconds = (days*86400);
 
-    this.age = parseInt(yearsSeconds + monthSeconds + daySeconds);
+    this.age = parseInt((yearsSeconds + monthSeconds + daySeconds).toFixed(2));
+    console.log(this.age);
 
-    this.mercuryAge = ((this.age / 0.24)/secondCalculator).toFixed(2);
-    this.venusAge = ((this.age / 0.62)/secondCalculator).toFixed(2);
-    this.marsAge = ((this.age / 1.88)/secondCalculator).toFixed(2);
-    this.jupiterAge = ((this.age / 11.86)/secondCalculator).toFixed(2);
+    this.mercuryAge = parseFloat(((this.age / 0.24)/secondCalculator).toFixed(2));
+    this.venusAge = parseFloat(((this.age / 0.62)/secondCalculator).toFixed(2));
+    this.marsAge = parseFloat(((this.age / 1.88)/secondCalculator).toFixed(2));
+    this.jupiterAge = parseFloat(((this.age / 11.86)/secondCalculator).toFixed(2));
 
     let lifeLeft = Math.floor(Math.random() * 50);
     this.lifeLeft = lifeLeft;
 
-    this.mercuryLife = lifeLeft / 0.24;
-    this.venusLife = lifeLeft / 0.62;
-    this.marsLife = lifeLeft / 1.88;
-    this.jupiterLife = lifeLeft / 11.86;
+    this.earthLife = parseFloat((this.age/secondCalculator).toFixed(2));
+    this.mercuryLife = parseFloat((lifeLeft / 0.24).toFixed(2));
+    this.venusLife = parseFloat((lifeLeft / 0.62).toFixed(2));
+    this.marsLife = parseFloat((lifeLeft / 1.88).toFixed(2));
+    this.jupiterLife = parseFloat((lifeLeft / 11.86).toFixed(2));
 
-    this.earthLife = (this.age/secondCalculator)+ lifeLeft;
-    this.mercuryExpectancy = this.mercuryAge + this.mercuryLife;
-    this.venusExpectancy = this.venusAge + this.venusLife;
-    this.marsExpectancy = this.marsLife + this.marsLife;
-    this.jupiterExpectancy = this.jupiterAge + this.jupiterLife;
+
+    this.earthExpectancy = parseFloat((this.earthLife + lifeLeft).toFixed(2));
+    this.mercuryExpectancy = parseFloat((this.mercuryAge + this.mercuryLife).toFixed(2));
+    this.venusExpectancy = parseFloat((this.venusAge + this.venusLife).toFixed(2));
+    this.marsExpectancy = parseFloat((this.marsLife + this.marsLife).toFixed(2));
+    this.jupiterExpectancy = parseFloat((this.jupiterAge + this.jupiterLife).toFixed(2));
 
   }
 

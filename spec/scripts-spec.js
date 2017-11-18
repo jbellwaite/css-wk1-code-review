@@ -46,7 +46,4 @@ describe('Age', function() {
     expect(age.lifeLeft).toBeLessThan(50);
   });
 
-
-
-
 });
