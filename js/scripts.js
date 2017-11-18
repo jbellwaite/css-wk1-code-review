@@ -42,7 +42,7 @@ export class Age {
     let monthSeconds =(month*31*86400);
     let daySeconds = (days*86400);
 
-    this.age = yearsSeconds + monthSeconds + daySeconds;
+    this.age = parseInt(yearsSeconds + monthSeconds + daySeconds);
 
     this.mercuryAge = ((this.age / 0.24)/secondCalculator).toFixed(2);
     this.venusAge = ((this.age / 0.62)/secondCalculator).toFixed(2);
