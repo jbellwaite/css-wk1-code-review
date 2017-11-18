@@ -44,16 +44,16 @@ export class Age {
 
     this.age = yearsSeconds + monthSeconds + daySeconds;
 
-    this.mercuryAge = ((this.age / .24)/secondCalculator).toFixed(2);
-    this.venusAge = ((this.age / .62)/secondCalculator).toFixed(2);
+    this.mercuryAge = ((this.age / 0.24)/secondCalculator).toFixed(2);
+    this.venusAge = ((this.age / 0.62)/secondCalculator).toFixed(2);
     this.marsAge = ((this.age / 1.88)/secondCalculator).toFixed(2);
     this.jupiterAge = ((this.age / 11.86)/secondCalculator).toFixed(2);
 
     let lifeLeft = Math.floor(Math.random() * 50);
     this.lifeLeft = lifeLeft;
 
-    this.mercuryLife = lifeLeft / .24;
-    this.venusLife = lifeLeft / .62;
+    this.mercuryLife = lifeLeft / 0.24;
+    this.venusLife = lifeLeft / 0.62;
     this.marsLife = lifeLeft / 1.88;
     this.jupiterLife = lifeLeft / 11.86;
 
