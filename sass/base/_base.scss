@@ -1,0 +1,13 @@
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/galaxy.jpeg");
+  height: 100%;
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: black;
+}
