@@ -1,0 +1,22 @@
+#output {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.earth {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.planet-stats {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -15,7 +15,9 @@ body {
 h1 {
   width: 100%;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 45px;
+  text-shadow: 10px; }
 
 form {
   display: flex;
@@ -33,7 +35,8 @@ form {
 input {
   width: 90%;
   margin: 0 0 10px 0;
-  color: black; }
+  color: yellow;
+  border-radius: 10%; }
 
 div {
   color: white; }
@@ -50,5 +53,23 @@ button:hover {
 @keyframes rotate {
   to {
     transform: rotate(300deg); } }
+#output {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.earth {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.planet-stats {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .planet-stats img {
+    width: 100px;
+    height: 100px; }
 
 /*# sourceMappingURL=styles.css.map */
