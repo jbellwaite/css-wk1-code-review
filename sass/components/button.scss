@@ -2,15 +2,5 @@ button {
   width: auto;
   height: auto;
   font-size: 40px;
-  border-radius: 50%;
-}
-
-button:hover {
-  animation: rotate, 2s;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(300deg);
-  }
+  border-radius: 48%;
 }

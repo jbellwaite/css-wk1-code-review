@@ -6,7 +6,6 @@ body {
   height: 100%;
   width: 100%;
   background-size: 100%;
-  background-repeat: no-repeat;
   background-color: black;
   display: flex;
   justify-content: center;
@@ -35,7 +34,6 @@ form {
 input {
   width: 90%;
   margin: 0 0 10px 0;
-  color: yellow;
   border-radius: 10%; }
 
 div {
@@ -45,14 +43,8 @@ button {
   width: auto;
   height: auto;
   font-size: 40px;
-  border-radius: 50%; }
+  border-radius: 48%; }
 
-button:hover {
-  animation: rotate, 2s; }
-
-@keyframes rotate {
-  to {
-    transform: rotate(300deg); } }
 #output {
   display: flex;
   justify-content: center;
@@ -61,15 +53,30 @@ button:hover {
 .earth {
   width: 100%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  .earth img {
+    width: 30%; }
+  .earth div {
+    border: 1px solid white;
+    min-height: 20px;
+    width: 50%; }
 
 .planet-stats {
-  width: 50%;
+  width: 25%;
   display: flex;
   justify-content: center;
   flex-direction: column; }
   .planet-stats img {
     width: 100px;
-    height: 100px; }
+    height: 100px;
+    align-self: center; }
+  .planet-stats div {
+    width: 98%;
+    min-height: 20px;
+    border: 1px solid white;
+    border-radius: 10%;
+    background-color: darkblue; }
 
 /*# sourceMappingURL=styles.css.map */
