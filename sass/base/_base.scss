@@ -12,21 +12,34 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @include body-font;
 }
 
 h1 {
   width: 100%;
   color: white;
-  text-align: center;
   font-size: 75px;
-  text-shadow: 10px;
+  text-shadow: $fade;
+  margin: 20px 0px;
   font-family: $bigelow;
+  text-align: center;
 }
 
 h3{
-  color: white;
+  @include body-font;
   text-align: center;
+}
+
+label {
+  font-family: $bigelow;
+}
+
+input {
   font-family: $open;
+}
+
+p {
+  @include body-font;
 }
 
 .output-area {

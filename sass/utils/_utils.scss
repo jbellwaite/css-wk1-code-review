@@ -1,2 +1,9 @@
-$bigelow: 'Bigelow Rules', cursive;
-$open: 'Open Sans', sans-serif;
+$bigelow: 'Mountains of Christmas', cursive;
+$open: 'Gloria Hallelujah', cursive;
+$fade: 2px 6px 10px #FF0000;
+$top-and-bottom: linear-gradient(transparent, yellow, transparent);
+
+@mixin body-font {
+  font-family: $open;
+  color: white;
+}

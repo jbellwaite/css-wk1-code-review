@@ -13,10 +13,15 @@
   img {
     width: 30%;
   }
-  div {
+  .earth-age {
     border: 1px solid white;
     min-height: 20px;
     width: 50%;
+  }
+  .earth-stats {
+    width: 90%;
+    background-color: $top-and-bottom;
+    text-shadow: $fade;
   }
 }
 

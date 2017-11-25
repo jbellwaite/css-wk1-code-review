@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bigelow+Rules|Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mountains+of+Christmas");
 *, *::after, *::before {
   box-sizing: border-box; }
 
@@ -10,20 +10,33 @@ body {
   background-color: black;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  font-family: "Gloria Hallelujah", cursive;
+  color: white; }
 
 h1 {
   width: 100%;
   color: white;
-  text-align: center;
   font-size: 75px;
-  text-shadow: 10px;
-  font-family: "Bigelow Rules", cursive; }
+  text-shadow: 2px 6px 10px #FF0000;
+  margin: 20px 0px;
+  font-family: "Mountains of Christmas", cursive;
+  text-align: center; }
 
 h3 {
+  font-family: "Gloria Hallelujah", cursive;
   color: white;
-  text-align: center;
-  font-family: "Open Sans", sans-serif; }
+  text-align: center; }
+
+label {
+  font-family: "Mountains of Christmas", cursive; }
+
+input {
+  font-family: "Gloria Hallelujah", cursive; }
+
+p {
+  font-family: "Gloria Hallelujah", cursive;
+  color: white; }
 
 .output-area {
   display: none; }
@@ -31,7 +44,7 @@ h3 {
 form {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap; }
   form div {
     display: flex;
@@ -39,10 +52,12 @@ form {
     width: 33%;
     flex-direction: column; }
     form div label {
-      color: white; }
+      color: white;
+      align-self: center; }
 
 input {
-  width: 90%;
+  align-self: center;
+  width: 30%;
   margin: 0 0 10px 0;
   border-radius: 10%; }
 
@@ -70,10 +85,14 @@ button {
   align-items: center; }
   .earth img {
     width: 30%; }
-  .earth div {
+  .earth .earth-age {
     border: 1px solid white;
     min-height: 20px;
     width: 50%; }
+  .earth .earth-stats {
+    width: 90%;
+    background-color: linear-gradient(transparent, yellow, transparent);
+    text-shadow: 2px 6px 10px #FF0000; }
 
 .planet-stats {
   width: 25%;

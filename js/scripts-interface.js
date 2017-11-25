@@ -27,6 +27,7 @@ $(document).ready(function() {
     // age.parseInt();
 
     $(".output-area").show();
+    $("#formOne").hide();
     $(".earth-age").text("On Earth, you are " + userAge.earthLife );
 
         if (userAge.lifeLeft <= 10) {
@@ -38,7 +39,7 @@ $(document).ready(function() {
         } else if (userAge.lifeLeft >=32 && userAge.lifeLeft <= 40) {
           $(".earth-stats").text("The galaxy sees your fate. In " + userAge.lifeLeft + " years, you are living in a trailer in Molalla with your 19 cats. After finishing Epicodus, you decided not to pursue a career in the tech community, and eventually end up selling house plants on Craigslist. One night, one of your cats falls asleep on your face, smothering you to death. That means you will live to an age of " + userAge.earthExpectancy + " years on Earth.");
         } else {
-          $(".earth-stats").text ("The galaxy sees your fate. In " + userAge.lifeLeft + " years, you are staying in your Italian villa. You've just enjoyed a night out with friends where you ate the finest Italian cuisine and drank the finest italian wine. After dinner, you grab some gelato and a bag of coke and decide to lounge in your hot tub. After finishing the gelato and a line of coke, you suddenly have a heart attack and drown in your hot tub. That means you will live to an age of " + userAge.earthExpectancy + " years on Earth.");
+          $(".earth-stats").text ("The galaxy sees your fate. In " + userAge.lifeLeft + " years, you've become a health addict after gaining a bunch of weight due to your job as a software engineer. You managed to lose over 100 pounds by switching to a vegan ketogenic diet where you only consume carrots and avocados. Your health guru has decided that in order to lose the last 15 pounds, you must go on an all juice cleanse, so you commit to consuming nothing by carrot and celery juice for the next 7 days. However, much to your suprise, all that carrot celery juice causes irreprable liver damage, and you die only 48 hours into your cleanse. That means you will live to an age of " + userAge.earthExpectancy + " years on Earth.");
         }
 
     $("#mercury-age").text(userAge.mercuryAge);
