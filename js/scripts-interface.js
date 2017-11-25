@@ -26,7 +26,7 @@ $(document).ready(function() {
     userAge.currentAgeCalculator();
     // age.parseInt();
 
-    // $("#output").show();
+    $(".output-area").show();
     $(".earth-age").text("On Earth, you are " + userAge.earthLife );
 
         if (userAge.lifeLeft <= 10) {
@@ -39,7 +39,7 @@ $(document).ready(function() {
           $(".earth-stats").text("The galaxy sees your fate. In " + userAge.lifeLeft + " years, you are living in a trailer in Molalla with your 19 cats. After finishing Epicodus, you decided not to pursue a career in the tech community, and eventually end up selling house plants on Craigslist. One night, one of your cats falls asleep on your face, smothering you to death. That means you will live to an age of " + userAge.earthExpectancy + " years on Earth.");
         } else {
           $(".earth-stats").text ("The galaxy sees your fate. In " + userAge.lifeLeft + " years, you are staying in your Italian villa. You've just enjoyed a night out with friends where you ate the finest Italian cuisine and drank the finest italian wine. After dinner, you grab some gelato and a bag of coke and decide to lounge in your hot tub. After finishing the gelato and a line of coke, you suddenly have a heart attack and drown in your hot tub. That means you will live to an age of " + userAge.earthExpectancy + " years on Earth.");
-        };
+        }
 
     $("#mercury-age").text(userAge.mercuryAge);
     $("#mercury-life").text(userAge.mercuryLife);

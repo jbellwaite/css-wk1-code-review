@@ -18,6 +18,17 @@ h1 {
   width: 100%;
   color: white;
   text-align: center;
-  font-size: 45px;
-  text-shadow: 10px
+  font-size: 75px;
+  text-shadow: 10px;
+  font-family: $bigelow;
+}
+
+h3{
+  color: white;
+  text-align: center;
+  font-family: $open;
+}
+
+.output-area {
+  display: none;
 }
