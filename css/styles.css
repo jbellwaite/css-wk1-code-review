@@ -1,41 +1,41 @@
-@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Mountains+of+Christmas");
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest|Source+Code+Pro");
 *, *::after, *::before {
   box-sizing: border-box; }
 
 body {
-  background-image: url("../img/galaxy.jpeg");
+  background-image: url("../img/stars.jpg");
   height: 100%;
   width: 100%;
-  background-size: 100%;
-  background-color: black;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Source Code Pro", monospace;
   color: white; }
 
 h1 {
   width: 100%;
   color: white;
-  font-size: 75px;
+  font-size: 65px;
   text-shadow: 2px 6px 10px #FF0000;
   margin: 20px 0px;
-  font-family: "Mountains of Christmas", cursive;
+  font-family: "Mystery Quest", cursive;
   text-align: center; }
 
 h3 {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Source Code Pro", monospace;
   color: white;
-  text-align: center; }
+  text-align: center;
+  font-size: 15px; }
 
 label {
-  font-family: "Mountains of Christmas", cursive; }
+  font-family: "Mystery Quest", cursive; }
 
 input {
-  font-family: "Gloria Hallelujah", cursive; }
+  font-family: "Source Code Pro", monospace; }
 
 p {
-  font-family: "Gloria Hallelujah", cursive;
+  font-family: "Source Code Pro", monospace;
   color: white; }
 
 .output-area {
@@ -45,13 +45,19 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
+  align-items: center; }
+
+.big-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
   flex-wrap: wrap; }
-  form div {
+  .big-form div {
     display: flex;
     justify-content: center;
     width: 33%;
     flex-direction: column; }
-    form div label {
+    .big-form div label {
       color: white;
       align-self: center; }
 
@@ -70,7 +76,14 @@ button {
   font-size: 40px;
   border-radius: 48%;
   background: radial-gradient(pink, darkblue);
-  border: none; }
+  border: none;
+  margin: 10px 10px 0 0; }
+
+.output-area {
+  background-color: rgba(19, 0, 77, 0.5);
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px; }
 
 #output {
   display: flex;
@@ -86,13 +99,16 @@ button {
   .earth img {
     width: 30%; }
   .earth .earth-age {
-    border: 1px solid white;
+    border: 1px solid rgba(19, 0, 77, 0.5);
+    border-radius: 10px;
+    background-color: rgba(204, 153, 255, 0.5);
     min-height: 20px;
     width: 50%; }
   .earth .earth-stats {
     width: 90%;
-    background-color: linear-gradient(transparent, yellow, transparent);
-    text-shadow: 2px 6px 10px #FF0000; }
+    text-shadow: 2px 6px 10px #FF0000;
+    background-color: rgba(19, 0, 77, 0.5);
+    border-radius: 10px; }
 
 .planet-stats {
   width: 25%;
@@ -104,10 +120,16 @@ button {
     height: 100px;
     align-self: center; }
   .planet-stats div {
-    width: 98%;
+    width: 90%;
     min-height: 20px;
-    border: 1px solid white;
-    border-radius: 10%;
-    background-color: darkblue; }
+    border: 1px solid rgba(19, 0, 77, 0.5);
+    border-radius: 10px;
+    background-color: rgba(204, 153, 255, 0.5); }
+
+.banner {
+  background-color: rgba(0, 19, 77, 0.6);
+  background-size: cover;
+  width: 98%;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */

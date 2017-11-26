@@ -28,6 +28,7 @@ $(document).ready(function() {
 
     $(".output-area").show();
     $("#formOne").hide();
+    $("p").hide();
     $(".earth-age").text("On Earth, you are " + userAge.earthLife );
 
         if (userAge.lifeLeft <= 10) {

@@ -9,41 +9,47 @@
     <title>Super Galactic Age Calculator</title>
   </head>
   <body>
-    <h1>Super Galactic Age Predictor</h1>
-    <h3>The galaxy sees everything, including your future. Enter your birthday and the current date, then ask the universe to reveal its secrets.  </h3>
+    <div class="banner">
+      <h1>Super Galactic Age Predictor</h1>
+      <h3>The galaxy sees everything, including your future. Enter your birthday and the current date, then ask the universe to reveal its secrets.</h3>
+    </div>
 
     <form id="formOne">
-      <div class="form-group">
-        <label for="dob-year">Enter the year you were born:</label>
-        <input type="number" name="dob-year" id="dob-year">
+      <div class="big-form">
+        <div class="form-group">
+          <label for="dob-year">Enter the year you were born:</label>
+          <input type="number" name="dob-year" id="dob-year">
+        </div>
+        <div class="form-group">
+          <label for="dob-month">Enter your birth month:</label>
+          <input type="number" name="dob-month" id="dob-month">
+        </div>
+        <div class="form-group">
+          <label for="dob-day">Enter the day of your birth:</label>
+          <input type="number" name="dob-day" id="dob-day">
+        </div>
+        <div class="form-group">
+          <label for="current-year">Enter the current year:</label>
+          <input type="number" name="current-year" id="current-year">
+        </div>
+        <div class="form-group">
+          <label for="current-month">Enter the current month:</label>
+          <input type="number" name="current-month" id="current-month">
+        </div>
+        <div class="form-group">
+          <label for="current-day">Enter the current day:</label>
+          <input type="number" name="current-day" id="current-day">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="dob-month">Enter your birth month:</label>
-        <input type="number" name="dob-month" id="dob-month">
+      <div class="enter-form">
+        <div class="form-group">
+          <button type="submit">
+            <img src="img/crystal-ball.gif" alt="crystal ball">
+          </button>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="dob-day">Enter the day of your birth:</label>
-        <input type="number" name="dob-day" id="dob-day">
-      </div>
-      <div class="form-group">
-        <label for="current-year">Enter the current year:</label>
-        <input type="number" name="current-year" id="current-year">
-      </div>
-      <div class="form-group">
-        <label for="current-month">Enter the current month:</label>
-        <input type="number" name="current-month" id="current-month">
-      </div>
-      <div class="form-group">
-        <label for="current-day">Enter the current day:</label>
-        <input type="number" name="current-day" id="current-day">
-      </div>
-      <div class="form-group">
-        <p>Click on the crystal ball to reveal your fate!</p><br>
-        <button type="submit">
-          <img src="img/crystal-ball.gif" alt="crystal ball">
-        </button>
-    </div>
     </form>
+    <p>Click on the crystal ball to reveal your fate!</p><br>
 
     <div class="output-area">
       <div id="output">

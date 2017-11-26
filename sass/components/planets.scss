@@ -1,3 +1,10 @@
+.output-area {
+  background-color: $output-background;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 #output {
   display: flex;
   justify-content: center;
@@ -14,14 +21,15 @@
     width: 30%;
   }
   .earth-age {
-    border: 1px solid white;
+    @include output-div;
     min-height: 20px;
     width: 50%;
   }
   .earth-stats {
     width: 90%;
-    background-color: $top-and-bottom;
     text-shadow: $fade;
+    background-color: $output-background;
+    border-radius: 10px;
   }
 }
 
@@ -38,10 +46,8 @@
   }
 
   div {
-    width: 98%;
+    width: 90%;
     min-height: 20px;
-    border: 1px solid white;
-    border-radius: 10%;
-    background-color: darkblue;
+    @include output-div;
   }
 }

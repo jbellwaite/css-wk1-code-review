@@ -1,9 +1,15 @@
-$bigelow: 'Mountains of Christmas', cursive;
-$open: 'Gloria Hallelujah', cursive;
+$bigelow: 'Mystery Quest', cursive;
+$open: 'Source Code Pro', monospace;
 $fade: 2px 6px 10px #FF0000;
-$top-and-bottom: linear-gradient(transparent, yellow, transparent);
+$output-background: rgba(19, 0, 77, 0.5);
 
 @mixin body-font {
   font-family: $open;
   color: white;
+}
+
+@mixin output-div {
+  border: 1px solid $output-background;
+  border-radius: 10px;
+  background-color: rgba(204, 153, 255, 0.5);
 }

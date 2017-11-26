@@ -2,8 +2,14 @@ form {
   display: flex;
   justify-content: center;
   width: 100%;
-  flex-wrap: wrap;
+  align-items: center;
+}
 
+.big-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
   div {
     display: flex;
     justify-content: center;

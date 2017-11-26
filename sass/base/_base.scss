@@ -4,11 +4,10 @@
 }
 
 body {
-  background-image: url("../img/galaxy.jpeg");
+  background-image: url("../img/stars.jpg");
   height: 100%;
   width: 100%;
-  background-size: 100%;
-  background-color: black;
+  background-size: cover;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -18,16 +17,18 @@ body {
 h1 {
   width: 100%;
   color: white;
-  font-size: 75px;
+  font-size: 65px;
   text-shadow: $fade;
   margin: 20px 0px;
   font-family: $bigelow;
   text-align: center;
+
 }
 
 h3{
   @include body-font;
   text-align: center;
+  font-size: 15px;
 }
 
 label {
